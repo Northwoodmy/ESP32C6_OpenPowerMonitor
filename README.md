@@ -23,7 +23,7 @@
   - 配置数据持久化存储
   - 支持配置重置功能
   - WiFi连接状态管理
-![image](https://github.com/user-attachments/assets/aa8deea7-1029-4262-a11b-5616a335d3b0)
+![image](https://github.com/user-attachments/assets/1bc88508-4c05-4086-84d8-e82596911898)
 
 ### 2. 显示管理模块（Display_Manager）
 - 管理不同显示界面的切换
@@ -55,7 +55,7 @@
 - 提供视觉反馈
 - 可通过配置界面开启/关闭
 - 支持动态效果
-
+![image](https://github.com/user-attachments/assets/aa8deea7-1029-4262-a11b-5616a335d3b0)
 ## 主要功能
 
 ### 1. WiFi配置功能
