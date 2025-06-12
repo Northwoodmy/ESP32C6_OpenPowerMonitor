@@ -9,8 +9,8 @@
 2. 显示屏：ST7789驱动的LCD屏幕
 3. RGB指示灯
 4. USB-C端口：5个监控端口（A1, C1, C2, C3, C4）
-![image](https://github.com/user-attachments/assets/59d9fd53-76b2-4ce3-a6d1-ca291737c578)
 ![image](https://github.com/user-attachments/assets/6375cd47-1fa1-4e18-ad5c-065516cbaf64)
+![image](https://github.com/user-attachments/assets/59d9fd53-76b2-4ce3-a6d1-ca291737c578)
 
 ## 软件架构
 
