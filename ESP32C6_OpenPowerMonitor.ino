@@ -135,7 +135,7 @@ void screenWifiMonitorTask(void* parameter) {
             
             // 如果正在扫描或显示WiFi错误界面，不执行切换
             if (!DisplayManager::isScanScreenActive() && !DisplayManager::isWiFiErrorScreenActive()) {
-                if (totalPower < 1.0) {
+                if (totalPower < 2.0) {
                     // 低功率状态
                     if (!isInTimeMode) {
                         // 如果还没开始计时，开始计时
@@ -161,7 +161,7 @@ void screenWifiMonitorTask(void* parameter) {
                         // 在时间显示模式下持续更新时间
                         DisplayManager::updateTimeScreen();
                     }
-                } else if (totalPower >= 2.0) {
+                } else if (totalPower >= 3.0) {
                     // 高功率状态，立即切换到电源监控
                     if (isInTimeMode) {
                         printf("[Display] High power detected (%.2fW), switching to power monitor mode\n", totalPower);
