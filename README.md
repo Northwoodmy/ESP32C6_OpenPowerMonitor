@@ -2,12 +2,15 @@
 
 ## 项目概述
 这是一个基于ESP32-C6开发的电源监控系统，主要用于实时监控和显示多个USB-C端口的供电状态。项目集成了WiFi配置、电源监控、RGB指示灯和LCD显示等功能模块。系统采用线程安全的界面管理机制，支持mDNS智能设备发现，具备高稳定性和自动故障恢复能力。
-![image](https://github.com/user-attachments/assets/39290198-2564-4419-8cdd-5ebcbccb87fd)
+![image](https://github.com/user-attachments/assets/c7878757-1085-4aa5-895b-4b43e5428015)
+
 ## 硬件组成
 1. 主控制器：ESP32-C6（单核处理器）
 2. 显示屏：ST7789驱动的LCD屏幕
 3. RGB指示灯
 4. USB-C端口：5个监控端口（A1, C1, C2, C3, C4）
+![image](https://github.com/user-attachments/assets/59d9fd53-76b2-4ce3-a6d1-ca291737c578)
+![image](https://github.com/user-attachments/assets/6375cd47-1fa1-4e18-ad5c-065516cbaf64)
 
 ## 软件架构
 
@@ -20,6 +23,7 @@
   - 配置数据持久化存储
   - 支持配置重置功能
   - WiFi连接状态管理
+![image](https://github.com/user-attachments/assets/aa8deea7-1029-4262-a11b-5616a335d3b0)
 
 ### 2. 显示管理模块（Display_Manager）
 - 管理不同显示界面的切换
@@ -34,6 +38,7 @@
   - 互斥锁保护的线程安全界面切换
   - 状态一致性检查和自动修复
   - 紧急重置功能防止界面冲突
+![image](https://github.com/user-attachments/assets/a6288796-7567-4df1-9a09-3b3099225e09)
 
 ### 3. 电源监控模块（Power_Monitor）
 - 实时监控各端口电源状态
@@ -43,6 +48,8 @@
   - 总功率计算和显示
   - 进度条显示功率使用情况
   - 异常状态提示
+![image](https://github.com/user-attachments/assets/de129e69-893c-49f8-9144-408a2268dc69)
+
 
 ### 4. RGB指示灯模块（RGB_Lamp）
 - 提供视觉反馈
